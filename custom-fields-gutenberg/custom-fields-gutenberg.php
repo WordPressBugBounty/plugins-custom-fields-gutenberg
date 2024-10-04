@@ -9,9 +9,9 @@
 	Donate link: https://monzillamedia.com/donate.html
 	Contributors: specialk
 	Requires at least: 4.6
-	Tested up to: 6.6
-	Stable tag: 2.4
-	Version:    2.4
+	Tested up to: 6.7
+	Stable tag: 2.4.1
+	Version:    2.4.1
 	Requires PHP: 5.6.20
 	Text Domain: custom-fields-gutenberg
 	Domain Path: /languages
@@ -71,7 +71,7 @@ if (!class_exists('G7G_CFG_CustomFields')) {
 		
 		function constants() {
 			
-			if (!defined('G7G_CFG_VERSION')) define('G7G_CFG_VERSION', '2.4');
+			if (!defined('G7G_CFG_VERSION')) define('G7G_CFG_VERSION', '2.4.1');
 			if (!defined('G7G_CFG_REQUIRE')) define('G7G_CFG_REQUIRE', '4.6');
 			if (!defined('G7G_CFG_AUTHOR'))  define('G7G_CFG_AUTHOR',  'Jeff Starr');
 			if (!defined('G7G_CFG_NAME'))    define('G7G_CFG_NAME',    __('Custom Fields for Gutenberg', 'custom-fields-gutenberg'));

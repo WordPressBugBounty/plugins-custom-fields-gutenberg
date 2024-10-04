@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Custom Fields Gutenberg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-18 22:48+0000\n"
+"POT-Creation-Date: 2024-10-03 21:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -30,8 +30,20 @@ msgstr ""
 msgid "Add New Custom Field"
 msgstr ""
 
-#: inc/settings-reset.php:38
-msgid "Buy one get one FREE with code"
+#: inc/settings-reset.php:40
+msgid "and"
+msgstr ""
+
+#: inc/settings-reset.php:42
+msgid "Apply code"
+msgstr ""
+
+#: inc/settings-reset.php:42
+msgid "at checkout. Sale ends 12/21/24."
+msgstr ""
+
+#: inc/settings-reset.php:41
+msgid "books"
 msgstr ""
 
 #: inc/plugin-core.php:190
@@ -67,7 +79,7 @@ msgstr ""
 msgid "Default options restored."
 msgstr ""
 
-#: inc/settings-reset.php:111
+#: inc/settings-reset.php:113
 msgid "Dismiss"
 msgstr ""
 
@@ -99,16 +111,16 @@ msgstr ""
 msgid "Exclude Protected"
 msgstr ""
 
+#: inc/settings-reset.php:37
+msgid "Fall Sale!"
+msgstr ""
+
 #: inc/plugin-core.php:212
 msgid "for more info."
 msgstr ""
 
 #: inc/settings-register.php:33
 msgid "Force Display"
-msgstr ""
-
-#: inc/settings-reset.php:40
-msgid "Get&nbsp;plugins&nbsp;&raquo;"
 msgstr ""
 
 #: custom-fields-gutenberg.php:145
@@ -157,10 +169,6 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: inc/settings-reset.php:39
-msgid "or take 30% off with code"
-msgstr ""
-
 #: inc/settings-register.php:149
 msgid ""
 "Please give this plugin a 5-star rating :) A huge THANK YOU for your support!"
@@ -176,6 +184,10 @@ msgstr ""
 
 #: inc/settings-register.php:21
 msgid "Post Types"
+msgstr ""
+
+#: inc/settings-reset.php:39
+msgid "Pro WordPress plugins"
 msgstr ""
 
 #: inc/settings-register.php:38
@@ -234,8 +246,8 @@ msgstr ""
 msgid "Sorry, pal!"
 msgstr ""
 
-#: inc/settings-reset.php:37
-msgid "Super Plugin Sale!"
+#: inc/settings-reset.php:38
+msgid "Take 25% OFF any of our"
 msgstr ""
 
 #: inc/settings-display.php:27
