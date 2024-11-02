@@ -10,8 +10,8 @@ Donate link: https://monzillamedia.com/donate.html
 Contributors: specialk
 Requires at least: 4.6
 Tested up to: 6.7
-Stable tag: 2.4.1
-Version:    2.4.1
+Stable tag: 2.4.2
+Version:    2.4.2
 Requires PHP: 5.6.20
 Text Domain: custom-fields-gutenberg
 Domain Path: /languages
@@ -149,11 +149,10 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 If you like Custom Fields for Gutenberg, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/custom-fields-gutenberg/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
-**2.4.1 (2024/10/03)**
+**2.4.2 (2024/11/02)**
 
-* Updates plugin settings page
-* Updates default translation template
-* Tests on WordPress 6.7 (beta)
+* Fixes bug with textdomain loading
+* Tests on WordPress 6.7
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/custom-fields-gutenberg.txt](https://plugin-planet.com/wp/changelog/custom-fields-gutenberg.txt)
