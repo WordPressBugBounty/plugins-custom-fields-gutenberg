@@ -7,6 +7,7 @@ global $wpdb;
 function g7g_cfg_uninstall() {
 	
 	delete_option('g7g_cfg_options');
+	delete_option('g7g-cfg-dismiss-notice');
 	
 }
 

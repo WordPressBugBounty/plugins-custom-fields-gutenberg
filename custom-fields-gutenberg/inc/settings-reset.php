@@ -32,14 +32,14 @@ function g7g_cfg_admin_notice() {
 			
 			?>
 			
-			<div class="notice notice-success notice-margin">
+			<div class="notice notice-success notice-margin notice-custom">
 				<p>
-					<strong><?php esc_html_e('Fall Sale!', 'custom-fields-gutenberg'); ?></strong> 
-					<?php esc_html_e('Take 25% OFF any of our', 'custom-fields-gutenberg'); ?> 
+					<strong><?php esc_html_e('Spring Sale!', 'custom-fields-gutenberg'); ?></strong> 
+					<?php esc_html_e('Take 30% OFF any of our', 'custom-fields-gutenberg'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://plugin-planet.com/"><?php esc_html_e('Pro WordPress plugins', 'custom-fields-gutenberg'); ?></a> 
 					<?php esc_html_e('and', 'custom-fields-gutenberg'); ?> 
 					<a target="_blank" rel="noopener noreferrer" href="https://books.perishablepress.com/"><?php esc_html_e('books', 'custom-fields-gutenberg'); ?></a>. 
-					<?php esc_html_e('Apply code', 'custom-fields-gutenberg'); ?> <code>FALL2024</code> <?php esc_html_e('at checkout. Sale ends 12/21/24.', 'custom-fields-gutenberg'); ?> 
+					<?php esc_html_e('Apply code', 'custom-fields-gutenberg'); ?> <code>SPRING2025</code> <?php esc_html_e('at checkout. Sale ends 6/25/2025.', 'custom-fields-gutenberg'); ?> 
 					<?php echo g7g_cfg_dismiss_notice_link(); ?>
 				</p>
 			</div>
@@ -118,7 +118,7 @@ function g7g_cfg_dismiss_notice_link() {
 
 function g7g_cfg_check_date_expired() {
 	
-	$expires = apply_filters('g7g_cfg_check_date_expired', '2024-12-21');
+	$expires = apply_filters('g7g_cfg_check_date_expired', '2025-06-25');
 	
 	return (new DateTime() > new DateTime($expires)) ? true : false;
 	

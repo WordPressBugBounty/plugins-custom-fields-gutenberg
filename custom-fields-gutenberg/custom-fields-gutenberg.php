@@ -8,10 +8,10 @@
 	Author URI: https://plugin-planet.com/
 	Donate link: https://monzillamedia.com/donate.html
 	Contributors: specialk
-	Requires at least: 4.6
-	Tested up to: 6.7
-	Stable tag: 2.4.2
-	Version:    2.4.2
+	Requires at least: 4.7
+	Tested up to: 6.8
+	Stable tag: 2.4.3
+	Version:    2.4.3
 	Requires PHP: 5.6.20
 	Text Domain: custom-fields-gutenberg
 	Domain Path: /languages
@@ -32,7 +32,7 @@
 	You should have received a copy of the GNU General Public License
 	with this program. If not, visit: https://www.gnu.org/licenses/
 	
-	Copyright 2024 Monzilla Media. All rights reserved.
+	Copyright 2025 Monzilla Media. All rights reserved.
 */
 
 if (!defined('ABSPATH')) die();
@@ -49,7 +49,6 @@ if (!class_exists('G7G_CFG_CustomFields')) {
 			register_activation_hook(__FILE__, 'g7g_cfg_dismiss_notice_activate');
 			
 			add_action('admin_init',          array($this, 'check_version'));
-			add_action('init',                array($this, 'load_i18n'));
 			add_filter('plugin_action_links', array($this, 'action_links'), 10, 2);
 			add_filter('plugin_row_meta',     array($this, 'plugin_links'), 10, 2);
 			add_filter('admin_footer_text',   array($this, 'footer_text'), 10, 1);
@@ -71,8 +70,8 @@ if (!class_exists('G7G_CFG_CustomFields')) {
 		
 		function constants() {
 			
-			if (!defined('G7G_CFG_VERSION')) define('G7G_CFG_VERSION', '2.4.2');
-			if (!defined('G7G_CFG_REQUIRE')) define('G7G_CFG_REQUIRE', '4.6');
+			if (!defined('G7G_CFG_VERSION')) define('G7G_CFG_VERSION', '2.4.3');
+			if (!defined('G7G_CFG_REQUIRE')) define('G7G_CFG_REQUIRE', '4.7');
 			if (!defined('G7G_CFG_AUTHOR'))  define('G7G_CFG_AUTHOR',  'Jeff Starr');
 			if (!defined('G7G_CFG_NAME'))    define('G7G_CFG_NAME',    'Custom Fields for Gutenberg');
 			if (!defined('G7G_CFG_HOME'))    define('G7G_CFG_HOME',    esc_url('https://perishablepress.com/custom-fields-gutenberg/'));
@@ -203,12 +202,6 @@ if (!class_exists('G7G_CFG_CustomFields')) {
 				}
 				
 			}
-			
-		}
-		
-		function load_i18n() {
-			
-			load_plugin_textdomain('custom-fields-gutenberg', false, dirname(G7G_CFG_FILE) .'/languages/');
 			
 		}
 		
