@@ -9,9 +9,9 @@ Author URI: https://plugin-planet.com/
 Donate link: https://monzillamedia.com/donate.html
 Contributors: specialk
 Requires at least: 4.7
-Tested up to: 6.8
-Stable tag: 2.4.3
-Version:    2.4.3
+Tested up to: 6.9
+Stable tag: 2.4.5
+Version:    2.4.5
 Requires PHP: 5.6.20
 Text Domain: custom-fields-gutenberg
 Domain Path: /languages
@@ -74,7 +74,7 @@ I develop and maintain this free plugin with love for the WordPress community. T
 
 And/or purchase one of my premium WordPress plugins:
 
-* [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Super fast WordPress firewall
+* [BBQ Pro](https://plugin-planet.com/bbq-pro/) - Blazing fast WordPress firewall
 * [Blackhole Pro](https://plugin-planet.com/blackhole-pro/) - Automatically block bad bots
 * [Banhammer Pro](https://plugin-planet.com/banhammer-pro/) - Monitor traffic and ban the bad guys
 * [GA Google Analytics Pro](https://plugin-planet.com/ga-google-analytics-pro/) - Connect WordPress to Google Analytics
@@ -101,7 +101,7 @@ Links, tweets and likes also appreciated. Thanks! :)
 2. Configure the plugin settings as desired
 3. Enable theme switcher via settings or shortcode
 
-[More info on installing WP plugins](https://wordpress.org/support/article/managing-plugins/#installing-plugins)
+[More info on installing WP plugins](https://wordpress.org/documentation/article/manage-plugins/#installing-plugins-1)
 
 
 **Usage**
@@ -115,7 +115,7 @@ Works just like the original "Custom Fields" meta box, except:
 
 **Uninstalling**
 
-This plugin cleans up after itself. All plugin settings will be removed from your database when the plugin is uninstalled via the Plugins screen. Custom Fields will NOT be removed.
+This plugin cleans up after itself. All plugin settings will be removed from the WordPress database when the plugin is deleted via the WP Plugins screen. Note: custom fields will NOT be removed, only plugin settings.
 
 
 **Like the plugin?**
@@ -126,9 +126,9 @@ If you like Custom Fields for Gutenberg, please take a moment to [give a 5-star 
 
 == Upgrade Notice ==
 
-To upgrade this plugin, remove the old version and replace with the new version. Or just click "Update" from the Plugins screen and let WordPress do it for you automatically.
+Visit the WordPress Plugins screen, locate the plugin, and click "Update" :)
 
-Note: uninstalling the plugin from the WP Plugins screen results in the removal of all settings and data from the WP database. Custom Fields will NOT be removed.
+__Note:__ Deleting this plugin via the WordPress Plugins screen will remove all of its settings from the WordPress database. Custom Fields will NOT be removed.
 
 
 
@@ -150,14 +150,12 @@ Send any questions or feedback via my [contact form](https://plugin-planet.com/s
 If you like Custom Fields for Gutenberg, please take a moment to [give a 5-star rating](https://wordpress.org/support/plugin/custom-fields-gutenberg/reviews/?rate=5#new-post). It helps to keep development and support going strong. Thank you!
 
 
-**2.4.3 (2025/03/18)**
+**2.4.5 (2026/01/28)**
 
-* Removes `load_i18n()` function
-* Bumps minimum required WP version
-* Adds uninstall option `g7g-cfg-dismiss-notice`
 * Updates plugin settings page
-* Generates new language template
-* Tests on WordPress 6.8 (beta)
+* Improves readme.txt documentation
+* Tests on PHP 8.4 and 8.5
+* Tests on WordPress 6.9
 
 
 Full changelog @ [https://plugin-planet.com/wp/changelog/custom-fields-gutenberg.txt](https://plugin-planet.com/wp/changelog/custom-fields-gutenberg.txt)
