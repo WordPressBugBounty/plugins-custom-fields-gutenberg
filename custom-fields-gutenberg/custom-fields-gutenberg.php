@@ -9,9 +9,9 @@
 	Donate link: https://monzillamedia.com/donate.html
 	Contributors: specialk
 	Requires at least: 4.7
-	Tested up to: 6.9
-	Stable tag: 2.4.5
-	Version:    2.4.5
+	Tested up to: 7.0
+	Stable tag: 2.4.6
+	Version:    2.4.6
 	Requires PHP: 5.6.20
 	Text Domain: custom-fields-gutenberg
 	Domain Path: /languages
@@ -71,7 +71,7 @@ if (!class_exists('G7G_CFG_CustomFields')) {
 		
 		function constants() {
 			
-			if (!defined('G7G_CFG_VERSION')) define('G7G_CFG_VERSION', '2.4.5');
+			if (!defined('G7G_CFG_VERSION')) define('G7G_CFG_VERSION', '2.4.6');
 			if (!defined('G7G_CFG_REQUIRE')) define('G7G_CFG_REQUIRE', '4.7');
 			if (!defined('G7G_CFG_AUTHOR'))  define('G7G_CFG_AUTHOR',  'Jeff Starr');
 			if (!defined('G7G_CFG_NAME'))    define('G7G_CFG_NAME',    'Custom Fields for Gutenberg');
@@ -147,7 +147,7 @@ if (!class_exists('G7G_CFG_CustomFields')) {
 				$links[] = '<a target="_blank" rel="noopener noreferrer" href="'. $home_href .'" title="'. $home_title .'">'. $home_text .'</a>';
 				
 				$rate_href  = 'https://wordpress.org/support/plugin/'. G7G_CFG_SLUG .'/reviews/?rate=5#new-post';
-				$rate_title = esc_attr__('Click here to rate and review this plugin on WordPress.org', 'custom-fields-gutenberg');
+				$rate_title = esc_attr__('Click here to rate and review this plugin at WordPress.org', 'custom-fields-gutenberg');
 				$rate_text  = esc_html__('Rate this plugin', 'custom-fields-gutenberg') .'&nbsp;&raquo;';
 				
 				$links[] = '<a target="_blank" rel="noopener noreferrer" href="'. $rate_href .'" title="'. $rate_title .'">'. $rate_text .'</a>';
@@ -184,16 +184,16 @@ if (!class_exists('G7G_CFG_CustomFields')) {
 			
 			if (isset($_GET['activate']) && $_GET['activate'] == 'true') {
 				
-				if (version_compare($wp_version, G7G_CFG_REQUIRE, '<')) {
+				if (version_compare(3, G7G_CFG_REQUIRE, '<')) {
 					
 					if (is_plugin_active(G7G_CFG_FILE)) {
 						
 						deactivate_plugins(G7G_CFG_FILE);
 						
 						$msg  = '<strong>'. G7G_CFG_NAME .'</strong> '. esc_html__('requires WordPress ', 'custom-fields-gutenberg') . G7G_CFG_REQUIRE;
-						$msg .= esc_html__(' or higher, and has been deactivated! ', 'custom-fields-gutenberg');
-						$msg .= esc_html__('Please return to the', 'custom-fields-gutenberg') .' <a href="'. admin_url() .'">';
-						$msg .= esc_html__('WP Admin Area', 'custom-fields-gutenberg') .'</a> ';
+						$msg .= esc_html__(' or higher, and has been deactivated. ', 'custom-fields-gutenberg');
+						$msg .= esc_html__('Please return to the', 'custom-fields-gutenberg') .' <a href="'. admin_url('plugins.php') .'">';
+						$msg .= esc_html__('WordPress Admin Area', 'custom-fields-gutenberg') .'</a> ';
 						$msg .= esc_html__('to upgrade WordPress and try again.', 'custom-fields-gutenberg');
 						
 						wp_die($msg);
